@@ -5,9 +5,26 @@
     margin: 0 auto;
     font-size: 22px;
 
-    
 
 
+
+}
+
+#logo_link {
+    padding-top: 5px;
+    justify-self: center;
+    align-self: center;
+}
+.home-grid {
+    display: grid;
+    grid-template-columns: 10;
+
+}
+.card-img, .mountains {
+    width: 100%;
+    grid-column: 2/7;
+    grid-row: 5/8;
+    box-shadow: 5px 5px 10px #6f7364;
 }
 
 nav a {
@@ -16,15 +33,46 @@ nav a {
     text-decoration: none;
     padding: 35px;
 }
+#hero-img{
+    width: 100%;
+    height: 100%;
+
+}
 
 #hero-msg h1{
-    text-align: center; }
+    text-align: center;
+    color: white;
+    font-family: 'Brush Script MT', cursive;
+}
+#hero-msg {
+    grid-column: 2/3;
+    grid-row: 1/2;
+    margin-top: 100px;
+    z-index: 10;
+
+
+     }
 #hero-msg h4{
-    text-align: center; }
+    text-align: center;
+    color: white; }
 .button-box{
     text-align: center; }
 main section{
     text-align: center; }
+#hero {
+        display: grid;
+        grid-template-columns: 1fr 3fr 1fr;
+        margin-top: 0px;
+}
+#hero-box {
+    grid-column: 1/4;
+    grid-row: 1/3;
+    z-index: 5;
+    width: 100%;
+  
+
+
+}
 
 #background {
     height: 725px;
@@ -40,9 +88,21 @@ h2 {
     margin: 0;
 }
 
-header{background-color: aqua;
-    font-family: Arial;}
+header{background-color: rgba(147, 94, 15, 0.433);
+    font-family: Arial;
+    display: grid;
+    grid-template-columns: 150px auto;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+}
+
 nav a:hover{background-color:aquamarine;}
+
+
+
 .book, .join{
     background-color: yellow;
     text-decoration: none;
@@ -54,9 +114,20 @@ nav a:hover{background-color:aquamarine;}
 
 
 .book:hover, .join:hover{background-color:violet}
-#background{background-color: aqua}
-.msg{background-color: purple}
-footer{background-color: aqua}
+#background{background-color: rgb(5, 122, 71)}
+.msg{
+    background-color: #6f7364;
+    padding: 35px;
+    grid-column: 6/10;
+    grid-row: 6/7;
+    box-shadow: 5px 5px 10px #6f7364;}
+
+
+
+
+
+
+
 footer a{text-decoration: none;
     padding: 25px 50px;}
 footer p {
@@ -70,17 +141,101 @@ footer p a:hover {
     font-family: 'Rock Salt', 'Bradley Hand', sans-serif;
     font-size: 2em;
 }
-.msg {
+
+.rivers-card {
+     width: 100%;
+     grid-column: 2/4;
+     grid-row: 2/3;}
+.camping-card {
+     width: 100%;
+     grid-column: 6/8;
+     grid-row: 2/3;}
+.rapids-card {
+     width: 100%;
+     grid-column:8/10;
+     grid-row: 2/3;
+     }
+#background{
+    width: 100%;
+    grid-column: 1/11;
+    grid-row: 4/9;
+}
+.mountains{
+    width: 100%;
+    grid-column: 2/7;
+    grid-row: 5/8;
+    box-shadow: 5px 5px 10px #6f7364;
+}
+.msg{
+    grid-column: 6/10;
+    grid-row: 6/7;
+    box-shadow: 5px 5px 10px #6f7364;
     background-color: #6f7364;
+    padding: 35px;
     line-height: 1.5em;
-  }
-  .rivers-card { margin:200px 0}
-  .camping-card { margin:200px 0}
-  .rapids-card { margin:200px 0}
+}
 
 .card-img {
+    width: 100%;
     border: 10px solid #d9c2a3;
+    transition: transform .5s;
+    box-shadow: 5px 5px 10px #6f7364;
 }
+
+.card-img:hover {
+    opacity: .6;
+    transform: scale(1.1);
+}
+
 main section img {
     box-sizing: border-box;
+}
+footer {
+    background-color: #6f7364;
+    padding: 25px 50px;
+    margin-top: 200px; 
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+@media screen and (max-width: 900px) {
+    #hero, .home-grid {
+        display: block;
+        height: auto;
+    }
+    nav, footer {
+        flex-direction: column;
+    }
+    nav a {
+        display: block;
+        padding: 15px;
+    }
+    #hero {
+        margin-top: 0;
+    }
+    #hero-msg {
+        margin-top: 0;
+    }
+    #hero-msg h4 {
+        display: none;
+    }
+    .home-title {
+        font-size: 25px;
+        color: #6f7364;
+    }
+    .rivers-card, .camping-card, .rapids-card { 
+        margin: 50px auto;
+        width: 60%;
+    }
+    #background {
+        display: none;
+    }
+    .mountains, .msg {
+        width: 80%;
+        display: block;
+        margin: 0 auto;
+    }
+    footer {
+        margin-top: 25px;
+    }
 }
