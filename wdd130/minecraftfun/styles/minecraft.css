@@ -205,6 +205,74 @@ footer{
           font-family:"minecraft";
           object-fit: contain;
         }
+.container1{
+    display:grid;
+    margin: 40px auto;
+    width:1100px;
+    height:850px;
+    background-color:olive;
+    color:rgb(150, 11, 11);
+    grid-template-areas: 1100px 1250px;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 350px);
+    grid-column-gap: 15px;
+    grid-row-gap: 115px;
+    padding-top:5px;
+    flex-wrap:wrap;
+
+}
+    .container1 .div1{
+        background-color:#333;
+        padding:20px;
+        border-radius:40px; 
+        display:flex;
+        align-items: center;
+        justify-content:center;
+        object-fit:fill;
+    }
+    .container1 .div3{
+        background-color:#333;
+        padding:20px;
+        border-radius:40px; 
+        display:flex;
+        align-items: center;
+        justify-content:center;
+        object-fit:contain;
+    }
+    .container1 .div4{
+        background-color:#333;
+        padding:20px;
+        border-radius:40px; 
+        display:flex;
+        align-items: center;
+        justify-content:center;
+        object-fit:fill;
+    }
+    .container1 .div6{
+        background-color:#333;
+        padding:20px;
+        border-radius:40px; 
+        display:flex;
+        align-items: center;
+        justify-content:center;
+        object-fit:fill;
+    }
+    .container1 .div5{
+        background-color:#333;
+        padding:20px;
+        border-radius:40px; 
+        display:flex;
+        align-items: center;
+        justify-content:center;
+        object-fit:fill;
+    }
+    
+
+.container1 img {
+    width: 400px;
+    height: auto;
+}
+
       
       
 
